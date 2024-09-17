@@ -85,6 +85,23 @@
     color: white;
 }
 
+.carousel-item img {
+    max-height: 400px; /* Ajusta el valor según el tamaño deseado */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+.container h2 {
+    color: #0056b3; /* Un azul agradable */
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+
 
 
     /* Ajustar márgenes y rellenos */
