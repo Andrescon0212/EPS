@@ -100,10 +100,23 @@
 }
 
 .container p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 1.2rem;
 }
+
+/*carrusel*/
+.carousel {
+    margin-top: 0; /* Asegúrate de que el carrusel no tenga margen superior */
+    padding-top: 0; /* Asegúrate de que no haya espacio interno en la parte superior */
+}
+
+
+/*noticas card*/
+.card-img-top {
+    height: 200px;
+    object-fit: cover; 
+  }
 
 /*login*/
 .login-form {
@@ -200,6 +213,14 @@
         background-color: #f8f9fa;
     }
     /* Estilo general del footer */
+
+    .footer {
+        width: 100%;
+        background-color: #f8f9fa; /* o el color que prefieras */
+        padding: 20px 0;
+        text-align: center;
+    }
+
     .footer {
         background-color: #004080; /* Fondo de color azul oscuro */
         padding: 40px 20px;
