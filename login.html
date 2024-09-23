@@ -6,6 +6,8 @@
   <title>Iniciar Sesión</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9and+0n0Miwzm/WPy'i4u+GQndk2vSu18VhUYY396Vu29i05896j7gaDIdd9zH1" crossorigin="anonymous">
   <link rel="stylesheet" href="./estilos.css"> </head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <body>
 
     <!-- Primer Navbar con Logo -->
@@ -14,7 +16,7 @@
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
         <img src="./img/logo.jfif" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-        EPS
+        EPS V
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,21 +42,21 @@
 </nav>
 
 <!-- Segundo Navbar con mejor distribución -->
-    <nav class="navbar navbar-light navbar-custom">
-        <div class="container-fluid">
-        <form class="d-flex w-50">
-            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-            <button class="btn btn-custom" type="submit">Buscar</button>
-        </form>
-        <div class="d-flex ms-auto">
-            <button class="btn btn-custom me-2">Contacto</button>
-            <button class="btn btn-custom">Certificado</button>
-        </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-light navbar-custom">
+  <div class="container-fluid">
+  <form class="d-flex w-50">
+      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+      <button class="btn btn-custom" type="submit">Buscar</button>
+  </form>
+  <div class="d-flex ms-auto">
+      <a href="./emergencias.html"><button class="btn btn-custom me-2">Emergencias</button></a>
+      <a href="./citas.html"><button class="btn btn-custom">Citas</button></a>
+  </div>
+  </div>
+</nav>
     <br><br><br>
 
-
+    <h1 class="display-3 text-center">Inicia Sesión</h1>
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6 login-form"> <div class="card">
@@ -72,13 +74,47 @@
                 <input type="password" class="form-control" id="contrasena" name="contrasena">
               </div>
               <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-              <p>No tienes cuenta? <a href="register.html">Regístrate</a></p>
+              <p>No tienes cuenta? <a href="./registro.html">Regístrate</a></p>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div><br><br>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-section">
+        <h5>Sobre Nosotros</h5>
+        <p>Somos una EPS comprometida con tu salud y bienestar. Ofrecemos una amplia gama de servicios médicos para garantizar el mejor cuidado posible.</p>
+        </div>
+        <div class="footer-section">
+        <h5>Enlaces Rápidos</h5>
+        <ul>
+            <li><a href="#">Afiliaciones</a></li>
+            <li><a href="#">Citas Médicas</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Emergencias</a></li>
+        </ul>
+        </div>
+        <div class="footer-section">
+        <h5>Contacto</h5>
+        <ul>
+            <li><a href="#">Teléfono: (123) 456-7890</a></li>
+            <li><a href="#">Email: contacto@eps.com</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <div class="footer-section logo">
+        <img src="./img/logo.jfif" alt="Logo de la EPS">
+        </div>
+    </footer>
+    
+
 
   <script src="script.js"></script>
 </body>

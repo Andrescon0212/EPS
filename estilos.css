@@ -313,3 +313,129 @@
         }
     }
     
+
+    /* Estilo base que se mantiene para pantallas grandes (PC) */
+
+/* Responsive para tablets (pantallas de 768px a 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center; /* Centra la imagen en pantallas medianas */
+    }
+
+    img {
+        width: 70%;
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
+    /* Ajuste de las cards para tablets */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .btn-lg {
+        font-size: 16px;
+    }
+    
+    .footer-section h5 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9rem;
+    }
+    
+    .footer-section.logo img {
+        width: 80px;
+    }
+}
+
+/* Responsive para móviles (pantallas menores de 768px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center; /* Centra la imagen en móviles */
+    }
+
+    img {
+        width: 90%;
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
+    /* Aumentar el tamaño del texto para pantallas pequeñas */
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajuste de las cards para móviles */
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-lg {
+        font-size: 14px;
+    }
+
+    .footer-section h5 {
+        font-size: 1rem;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.8rem;
+    }
+
+    .footer-section.logo img {
+        width: 60px;
+    }
+
+    .container.mt-5 h2, .container.mt-5 p.lead {
+        font-size: 1rem;
+    }
+
+    /* Ajustes del video para móviles */
+    .object-fit-sm-contain {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar el tamaño del footer en móvil */
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+}
