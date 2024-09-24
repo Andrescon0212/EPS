@@ -45,6 +45,29 @@
     }
     
 
+    /* Estilos para la sección Hero */
+.hero {
+    background-color: #f8f9fa; /* Un fondo claro opcional */
+    padding: 50px 0; /* Ajustar el padding superior e inferior */
+}
+
+.hero .container {
+    max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    text-align: left; /* Asegura que el contenido esté alineado a la izquierda */
+}
+
+@media (max-width: 768px) {
+    .hero .display-3 {
+        font-size: 2rem; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .hero .lead {
+        font-size: 1.25rem;
+    }
+}
+
+
+
     /* Color de los navbars */
     .navbar-custom {
         background-color: #336699; /* Azul moderado */
@@ -215,25 +238,27 @@
     /* Estilo general del footer */
 
     .footer {
-        width: 100%;
-        background-color: #f8f9fa; /* o el color que prefieras */
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .footer {
         background-color: #004080; /* Fondo de color azul oscuro */
         padding: 40px 20px;
         color: white;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
     }
     
-    .footer h5 {
-        font-size: 1.8rem; /* Aumenta el tamaño de los encabezados */
-        margin-bottom: 20px;
+    .footer-title {
+        color: #ffffff; /* Color blanco para los títulos */
         font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.8rem; /* Aumenta el tamaño de los encabezados */
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin: 10px;
     }
     
     .footer ul {
@@ -245,26 +270,26 @@
         margin-bottom: 10px;
     }
     
-    .footer ul li a {
+    .footer a {
+        color: white; /* Mantener los enlaces en blanco */
         text-decoration: none;
-        color: white;
         font-size: 1.3rem; /* Aumenta el tamaño de los enlaces */
         transition: color 0.3s ease; /* Transición para un efecto suave en hover */
     }
     
-    .footer ul li a:hover {
+    .footer a:hover {
         color: #ffcc00; /* Color amarillo cuando se pasa el mouse por encima */
+        text-decoration: underline;
     }
     
-    /* Iconos sociales */
-    .footer .social-icons a {
+    .social-icons a {
         font-size: 1.5rem;
         color: white;
         margin-right: 15px;
         transition: transform 0.3s ease, color 0.3s ease;
     }
     
-    .footer .social-icons a:hover {
+    .social-icons a:hover {
         color: #ffcc00; /* Cambia el color al pasar el mouse */
         transform: scale(1.2); /* Agranda el icono al pasar el mouse */
     }
@@ -273,11 +298,10 @@
         font-size: 1.2rem; /* Aumenta el tamaño del texto */
     }
     
-    /* Ajuste del logo en el footer */
-    .footer .logo img {
+    .logo img {
         max-width: 120px; /* Tamaño del logo */
     }
-
+    
     /* Estilos para la sección "Sobre Nosotros" del footer */
     .footer-section {
         max-width: 400px; /* Limitar el ancho para evitar que el texto sea muy largo */
@@ -437,5 +461,110 @@
 
     .social-icons i {
         font-size: 18px;
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: #0056b3;
+}
+
+/* Estilos para las cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Responsividad para las cards */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    /* Ajustar el tamaño de las cards para pantallas más pequeñas */
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn-lg {
+        font-size: 0.875rem;
+    }
+
+    .carousel-caption {
+        font-size: 1rem;
+    }
+    
+    /* Para ajustar secciones del footer */
+    .footer-section {
+        margin-bottom: 15px;
+    }
+
+    .footer .logo {
+        margin-top: 20px;
+    }
+}
+
+/*index*/
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-custom {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-icons a {
+        margin-bottom: 10px;
     }
 }

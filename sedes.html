@@ -10,11 +10,41 @@
 <link rel="stylesheet" href="./estilos.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    /* Personalizar el footer */
+    .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin: 10px;
+    }
+    .footer .logo img {
+        max-width: 100px;
+    }
+
+    /* Hacer las cards responsivas */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes adicionales para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .card {
+            margin: 0 auto;
+        }
+    }
+</style>
 </head>
 <body>
 
 <!-- Primer Navbar con Logo -->
-<!-- Primer Navbar más grande -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -58,74 +88,92 @@
     </div>
 </nav>
 
-    <div class="container mt-4">
-        <h1 class="mb-4 text-center">Nuestras Sedes y Servicios</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Tu salud es nuestra prioridad</h5>
-                        <p class="card-text">Hemos diseñado una variedad de servicios para acompañarte desde lo más simple hasta lo más especializado.</p>
-                    </div>
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Nuestras Sedes y Servicios</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4 h-100 shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tu salud es nuestra prioridad</h5>
+                    <p class="card-text">Hemos diseñado una variedad de servicios para acompañarte desde lo más simple hasta lo más especializado.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Citas médicas fáciles</h5>
-                        <p class="card-text">Agenda tu consulta en la sede más cercana de manera rápida y sencilla. También puedes solicitar tus medicamentos sin complicaciones.</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4 h-100 shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Citas médicas fáciles</h5>
+                    <p class="card-text">Agenda tu consulta en la sede más cercana de manera rápida y sencilla. También puedes solicitar tus medicamentos sin complicaciones.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Resultados confiables</h5>
-                        <p class="card-text">Nuestro equipo de laboratorio está listo para brindarte resultados rápidos y confiables, con atención personalizada a tus inquietudes.</p>
-                    </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4 h-100 shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Resultados confiables</h5>
+                    <p class="card-text">Nuestro equipo de laboratorio está listo para brindarte resultados rápidos y confiables, con atención personalizada a tus inquietudes.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+</div>
 
+<!-- Sección de las 6 Cards -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Primera Card -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-2 h-100 shadow-lg">
+                <img src="./img/sedes1.jpg" class="card-img-top" alt="Sede Buenos Aires">
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.322619998465!2d-75.5602066!3d6.2424608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a3fad2f78f%3A0x78efbd5b99659aa7!2sComfama%20-%20EPS%20SURA!5e0!3m2!1ses!2sco!4v1727133279795!5m2!1ses!2sco" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sede Buenos Aires</h5>
+                    <p class="card-text">Especialización en fisioterapia y rehabilitación.</p>
+                    <p>Especialización en fisioterapia y rehabilitación. Ayudamos a nuestros pacientes a mejorar su movilidad y recuperarse de lesiones.</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Segunda Card -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-2 h-100 shadow-lg">
+                <img src="./img/sedes2.jfif" class="card-img-top" alt="Sede Centro">
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63458.480580418196!2d-75.6178592!3d6.2432893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44285802bc0ac9%3A0xb52b655442890ca5!2sIPS%20SURA%20CENTRO!5e0!3m2!1ses!2sco!4v1727133236920!5m2!1ses!2sco" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sede Centro</h5>
+                    <p class="card-text">Servicios de laboratorio clínico.</p>
+                    <p>Especializada en laboratorio clínico, brindamos exámenes rápidos y resultados confiables.</p>
+                </div>
+            </div>
+        </div>
 
-             <!-- Sección de las 6 Cards -->
-             <div class="container mt-4">
-                <div class="row">
-                <div class="col-md-4 h-100">
-                    <div class="card mb-2">
-                    <img src="./img/sedes1.jpg" class="card-img-top" alt="Card 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Sede Buenos Aires</h5>
-                        <p class="card-text">Fisioterapia.</p>
-                        <a href="https://www.google.com/maps/place/Comfama+-+EPS+SURA/@6.2424608,-75.5602066,16z/data=!4m10!1m2!2m1!1ssura+buenos+aires+eps!3m6!1s0x8e4429a3fad2f78f:0x78efbd5b99659aa7!8m2!3d6.2385168!4d-75.5476338!15sChVzdXJhIGJ1ZW5vcyBhaXJlcyBlcHMiA4gBAZIBGWZhbWlseV9wcmFjdGljZV9waHlzaWNpYW7gAQA!16s%2Fg%2F11kpvpkkpq?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver más</a>
-                    </div>
-                    </div>
+        <!-- Tercera Card -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-2 h-100 shadow-lg">
+                <img src="./img/sedes3.avif" class="card-img-top" alt="Sede Laureles">
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.322619998465!2d-75.5602066!3d6.2424608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a3fad2f78f%3A0x78efbd5b99659aa7!2sComfama%20-%20EPS%20SURA!5e0!3m2!1ses!2sco!4v1727133279795!5m2!1ses!2sco" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-2 h-100">
-                    <img src="./img/sedes2.jfif" class="card-img-top" alt="Card 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Sede Centro</h5>
-                        <p class="card-text">Laboratorio.</p>
-                        <a href="https://www.google.com/maps/place/IPS+SURA+CENTRO/@6.2432893,-75.6178592,13z/data=!4m10!1m2!2m1!1ssura+centro+eps!3m6!1s0x8e44285802bc0ac9:0xb52b655442890ca5!8m2!3d6.2476686!4d-75.5624582!15sCg9zdXJhIGNlbnRybyBlcHMiA4gBAVoRIg9zdXJhIGNlbnRybyBlcHOSAQhob3NwaXRhbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSdE1UWTNOME5uRUFF4AEA!16s%2Fg%2F1ptx89b7n?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver más</a>
-                    </div>
-                    </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sede Laureles</h5>
+                    <p class="card-text">Atención integral familiar.</p>
+                    <p>Nuestra sede principal, especializada en consultas generales y urgencias 24 horas.</p>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-2 h-100">
-                    <img src="./img/sedes3.avif" class="card-img-top" alt="Card 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Sede Laureles</h5>
-                        <p class="card-text">Sede Principal.</p>
-                        <a href="https://www.google.com/maps/place/Sura/@6.2417355,-75.627911,14z/data=!4m10!1m2!2m1!1ssura+laureles+eps!3m6!1s0x8e4429876eb17fe3:0xc462ad96186746f9!8m2!3d6.2417355!4d-75.5898022!15sChFzdXJhIGxhdXJlbGVzIGVwcyIDiAEBkgESdXJnZW50X2NhcmVfY2VudGVy4AEA!16s%2Fg%2F11l6zp41vk?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="btn btn-primary">Ver más</a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div><br><br>
+            </div>
+        </div>
+    </div>
+</div><br><br> 
 
     <!-- Footer -->
     <footer class="footer">
@@ -159,9 +207,7 @@
         </div>
     </footer>
 
-
-
-<!-- Bootstrap JS -->
+<!-- Incluir Bootstrap JS desde CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

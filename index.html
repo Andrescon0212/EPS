@@ -14,40 +14,38 @@
 <body>
 
 <!-- Primer Navbar con Logo -->
-<!-- Primer Navbar más grande -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-<div class="container-fluid">
-<a class="navbar-brand" href="#">
-    <img src="./img/logo.jfif" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-    EPS V
-</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav me-auto">
-    <li class="nav-item">
-        <a class="nav-link active fs-5" href="./index.html">Inicio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fs-5" href="./servicios.html">Servicios</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fs-5" href="./sedes.html">Sedes</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fs-5" href="./noticias.html">Noticias</a>
-    </li>
-    </ul>
-    <a href="./login.html"><button class="btn btn-outline-light btn-lg">Iniciar Sesión</button></a>
-</div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.jfif" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            EPS V
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./sedes.html">Sedes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./noticias.html">Noticias</a>
+                </li>
+            </ul>
+            <a href="./login.html"><button class="btn btn-outline-light btn-lg">Iniciar Sesión</button></a>
+        </div>
+    </div>
 </nav>
-
 
 <!-- Segundo Navbar con mejor distribución -->
 <nav class="navbar navbar-light navbar-custom">
-    <div class="container-fluid">
+  <div class="container-fluid">
     <form class="d-flex w-50">
         <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
         <button class="btn btn-custom" type="submit">Buscar</button>
@@ -56,17 +54,19 @@
         <a href="./emergencias.html"><button class="btn btn-custom me-2">Emergencias</button></a>
         <a href="./citas.html"><button class="btn btn-custom">Citas</button></a>
     </div>
-    </div>
+  </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section class="hero">
-    <div class="container">
-    <h1 class="display-3">Bienvenido a la EPS V</h1>
-    <p class="lead">Tu salud, nuestro compromiso.</p>
-    <a href="./servicios.html" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
+    <div class="container text-start"> <!-- Añadí la clase text-start para alinear el texto a la izquierda -->
+        <h1 class="display-3">Bienvenido a la EPS V</h1>
+        <p class="lead">Tu salud, nuestro compromiso.</p>
+        <a href="./servicios.html" class="btn btn-primary btn-lg">Conoce nuestros servicios</a>
     </div>
 </section>
+
 
 <!-- Tercer Navbar con más opciones -->
 <nav class="navbar navbar-expand-lg navbar-custom g-5">
@@ -92,70 +92,67 @@
 
 <!-- Sección de las 6 Cards -->
 <div class="container mt-4">
-    <div class="row">
-    <div class="col-md-4 ">
-        <div class="card mb-2 h-100">
-        <img src="./img/citas.jpg" class="card-img-top" alt="Card 1">
-        <div class="card-body text-center">
-            <h5 class="card-title">Citas</h5>
-            <p class="card-text">Asigna o mira el estado de tu cita.</p>
-            <a href="./citas.html" class="btn btn-primary">Ver más</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/citas.jpg" class="card-img-top" alt="Card 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Citas</h5>
+                    <p class="card-text">Asigna o mira el estado de tu cita.</p>
+                    <a href="./citas.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/medicamentos.webp" class="card-img-top" alt="Card 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Medicamentos</h5>
+                    <p class="card-text">Solicitud de Medicamentos.</p>
+                    <a href="./medicamentos.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-2 h-100">
-        <img src="./img/medicamentos.webp" class="card-img-top" alt="Card 2">
-        <div class="card-body text-center">
-            <h5 class="card-title">Medicamentos</h5>
-            <p class="card-text">Solicitud de Medicamentos.</p>
-            <a href="./medicamentos.html" class="btn btn-primary">Ver más</a>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/pagos.jfif" class="card-img-top" alt="Card 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pagos</h5>
+                    <p class="card-text">Consulta la información sobre tus pagos.</p>
+                    <a href="./pagos.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/laboratorio.jfif" class="card-img-top" alt="Card 4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Laboratorio</h5>
+                    <p class="card-text">Resultados y solicitud de examenes de laboratorio</p>
+                    <a href="./labortatorios.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-2 h-100">
-        <img src="./img/pagos.jfif" class="card-img-top" alt="Card 3">
-        <div class="card-body text-center">
-            <h5 class="card-title">Pagos</h5>
-            <p class="card-text">Consulta la información sobre tus pagos.</p>
-            <a href="./pagos.html" class="btn btn-primary">Ver más</a>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/accesor.avif" class="card-img-top" alt="Card 5">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Asesor en línea</h5>
+                    <p class="card-text">Chatea con un asesor.</p>
+                    <a href="./ascesor.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/hospital.jfif" class="card-img-top" alt="Card 6">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sedes</h5>
+                    <p class="card-text">Conoce nuestras sedes.</p>
+                    <a href="./sedes.html" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col-md-4 g-5">
-        <div class="card mb-2 h-100">
-        <img src="./img/laboratorio.jfif" class="card-img-top" alt="Card 4">
-        <div class="card-body text-center">
-            <h5 class="card-title">Laboratorio</h5>
-            <p class="card-text">Resultados y solicitud de examenes de laboratorio</p>
-            <a href="./labortatorios.html" class="btn btn-primary">Ver más</a>
-        </div>
-        </div>
-    </div>
-    <div class="col-md-4 g-5">
-        <div class="card mb-2 h-100">
-        <img src="./img/accesor.avif" class="card-img-top" alt="Card 5">
-        <div class="card-body text-center">
-            <h5 class="card-title">Ascesor en linea</h5>
-            <p class="card-text">Chatea con un ascesor.</p>
-            <a href="./ascesor.html" class="btn btn-primary">Ver más</a>
-        </div>
-        </div>
-    </div>
-    <div class="col-md-4 g-5">
-        <div class="card mb-2 h-100">
-        <img src="./img/hospital.jfif" class="card-img-top" alt="Card 6">
-        <div class="card-body text-center">
-            <h5 class="card-title">Sedes</h5>
-            <p class="card-text">Conoce nuestras sedes.</p>
-            <a href="./sedes.html" class="btn btn-primary">Ver más</a>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 
@@ -196,25 +193,25 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-section">
-        <h5>Sobre Nosotros</h5>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-section">
+        <h5 class="footer-title">Sobre Nosotros</h5>
         <p>Somos una EPS comprometida con tu salud y bienestar. Ofrecemos una amplia gama de servicios médicos para garantizar el mejor cuidado posible.</p>
-        </div>
-        <div class="footer-section">
-        <h5>Enlaces Rápidos</h5>
+    </div>
+    <div class="footer-section">
+        <h5 class="footer-title">Enlaces Rápidos</h5>
         <ul>
             <li><a href="./afiliaciones.html">Afiliaciones</a></li>
             <li><a href="./citas.html">Citas Médicas</a></li>
             <li><a href="./servicios.html">Servicios</a></li>
             <li><a href="./emergencias.html">Emergencias</a></li>
         </ul>
-        </div>
-        <div class="footer-section">
-        <h5>Contacto</h5>
+    </div>
+    <div class="footer-section">
+        <h5 class="footer-title">Contacto</h5>
         <ul>
             <li><a href="https://web.whatsapp.com/">Teléfono: 3016880963</a></li>
             <li><a href="https://mail.google.com/mail/u/0/#inbox">Email: andresfelipecondeestrada@gmail.com </a></li>
@@ -224,11 +221,11 @@
             <a href="https://x.com/epssura?lang=es"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/segurossura/?hl=es"><i class="fab fa-instagram"></i></a>
         </div>
-        </div>
-        <div class="footer-section logo">
+    </div>
+    <div class="footer-section logo">
         <a href="./index.html"><img src="./img/logo.jfif" alt="Logo de la EPS"></a>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 
 <!-- Bootstrap JS -->
