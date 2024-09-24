@@ -568,3 +568,36 @@ body {
         margin-bottom: 10px;
     }
 }
+
+/* Estilo general para las cards */
+.service-card {
+    border-radius: 15px; /* Cambiar el estilo si no deseas el círculo completo */
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para pantallas pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+    .service-card {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        margin: 0 auto; /* Centra la card */
+    }
+}
+
+/* Estilos para pantallas medianas (576px a 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .service-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para pantallas grandes (mayores a 768px) */
+@media (min-width: 768px) {
+    .service-card {
+        width: auto; /* Mantener el tamaño predeterminado */
+    }
+}
